@@ -1,7 +1,14 @@
-<h1></h1>
-
+<h1>Todos</h1>
+<!-- 
 <ul>
     @for (todo of todos(); track todo.id) {
+        <app-to-do-element [todo] = "todo"></app-to-do-element>
+    }
+</ul> -->
+
+
+<ul>
+    @for (todo of  todosSubject | async; track todo.id) {
         <app-to-do-element [todo] = "todo"></app-to-do-element>
     }
 </ul>
