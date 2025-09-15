@@ -1,0 +1,7 @@
+<h1></h1>
+
+<ul>
+    @for (todo of todos(); track todo.id) {
+        <app-to-do-element [todo] = "todo"></app-to-do-element>
+    }
+</ul>

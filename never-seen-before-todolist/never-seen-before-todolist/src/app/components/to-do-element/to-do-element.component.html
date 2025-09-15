@@ -1,0 +1,13 @@
+<li>
+    <h2>
+        {{ todo.title }}
+    </h2>
+    <p>
+     [{{todo.id}}]  {{ todo.status }}
+    </p>
+@if(todo.status === 'new') {
+    <div> 
+        <button (click) = "closeTodo()">Set as Finished</button>
+    </div>
+}
+</li>
